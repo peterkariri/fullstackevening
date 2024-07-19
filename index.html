@@ -4,6 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+      tr{
+        border-right: 3px solid green;
+      }
+      th{
+        border-right: 2px solid yellow;
+        border-bottom: 3px solid black;
+      }
+
+      td{
+        border-bottom: 3px solid grey;
+        border-right: 2px solid red;
+      }
+    </style>
 </head>
 <body>
     <header>
@@ -20,7 +34,78 @@
           </ul>
         </nav>
        </header>
-    hurray
-    
+      //tables in html 
+
+      tables are used to store content in row and colums (ie)they are used in fixed and dynamic application 
+      this areas include ,tables can be usewd in navigation ,frontend user interface to show recordings ,listing down 
+      a set of activities to do etc:
+
+      the syntax for tables is 
+      <table>
+        denotes the table outlook itself:border,parameters the table will container
+        tr:they run from left to right and they are used to store data 
+        td:table data is used to stored the actual data(cell)>>contains the aqctuall data in the table 
+        th:table header is used to store the heading of the table
+        thead:table header is used to store the heading of the table
+        tbody:table body is used to store the body of the table
+      </table>
+      //general outlook
+      <table style="border: 5px solid black; ">
+        <tr >
+          <th >Firstname</th>
+          <th>Second Name</th>
+          <th>Phone</th>
+          <th>Address</th>
+          <th>Email</th>
+        </tr>
+<!--     // forms the foirst colum of data 
+ -->       
+         <tr>
+          <td>Eustus</td>
+          <td>Muchina</td>
+          <td>0712345678</td>
+          <td>Kenya</td>
+          <td>eustus@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Alicia</td>
+          <td>Wambui</td>
+          <td>0712345678</td>
+          <td>Kenya</td>
+          <td>alicia@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Faith</td>
+          <td>Wambui</td>
+          <td>0712345678</td>
+          <td>Kenya</td>
+          <td>faith@gmail.com</td>
+        </tr>
+
+      </table>
+
+      images and video tags 
+
+      image is normally represent with the img tag which has two attribute that is src(source) and the alt where we 
+      put the alternate text(dtA ISSUES,a person with visua imprrements want ot acess a website )
+     the source attribute accepts and denotes the path of the image(the path canbe local storage or a url in the internet)
+     in additon to these attribute the img tag has the width andthe height property:
+      <img src="/3.png" alt="hosting services" height="200px" width="200px">
+
+video tags >>can be used to append locally stored  videos in your website
+src>>denotes the source of the video 
+the controls allows us to have full maniulation of the video (pause ,play,increase speed,)
+you can also limit the amount of controlls using the allow keyword
+
+<!-- <video src="/demovideo.mp4"  controls allow="autoplay"></video> -->
+<!-- <video src="" controls="controls" width="200px" height="200px">
+
+  iframes>>are used to embed maps and video with links such us youtube videos,a website
+   inside a website and other resources that you need to embed in your website 
+   <iframe src="" frameborder="0" allow=""></iframe> -->
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/5SKP1_F7ReE?si=ytzPCMuSUSKt1yQN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</video>
 </body>
 </html>
