@@ -1,0 +1,134 @@
+<!-- //forms are data collection
+ components used in the web broswer to collect data
+  from user and send them to the databse 
+  forms   send data to the server via ONE protocols  (Https):has two methods that are used 
+  in forms :this methods are POST and GET
+
+  POST>>refers to sending a request to the server
+  Get >>refers to requesting a request 
+
+  forms use input types to collect data :this is the basic outlook of a form 
+
+
+  every input type contains a label to it :(an identify on what the form input type require ) -->
+  <!--   the input attributes are as follow:
+  type:denotes the input that the user desires to use(date,button,email,password)
+  name:this referes to what the programmer intends to be storewd in the database  -->
+ <!--  form validation -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            display: flex;
+            flex-direction: column;
+            margin: 30px auto;
+            width: 30%;
+        }
+        input{
+            width: 100%;
+        }
+    </style>
+ </head>
+ <body>
+    
+ </body>
+ </html>
+ form validation refers to validating user input on entry,include (required ,max length,min length)
+ required field:makes sure that user input is not empty 
+ max length>>makes sure user input reaches a particular length for submission 
+ min lenght>>makes sure that the user input does not go beyond a particar in shortness
+
+   <form action="">
+    <div>
+        <label for="fname">Firstname:</label>
+        <input type="text" name="firstname" id="fname" placeholder="username" required minlength="4" max="18">
+    </div>
+
+  <div>
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" placeholder="useremail@gmail.com" required minlength="10" maxlength="20">
+  </div>
+   
+  <div>
+    <label for="pssword">Password</label>
+    <input type="password" id="pssword" name="password" required minlength="4">
+  </div>
+  
+  <div>
+    <label for="cpssword">Confirm Password:</label>
+    <input type="password" name="password" id="cpssword" required minlength="4">
+  </div>
+  <div>
+    <label for="date">Date:</label>
+    <input type="date" name="date" id="date" >
+  </div>
+   
+  <div>
+    <label for="num">Number</label>
+    <input type="number" name="number" id="num" >
+  </div>
+
+  <div>
+    <label for="swimm">swimming</label>
+    <input type="checkbox" name="swimming" id="swimm">
+  </div>
+  <div>
+    <label for="dancing">Dancing</label>
+    <input type="checkbox" name="dancing" id="dancing">
+  </div>
+  <div>
+    <label for="skate">skating</label>
+    <input type="checkbox" name="skating" id="skate">
+  </div>
+  <div>
+    <label for="reading">Reading</label>
+    <input type="checkbox" name="reading" id="reading">
+  </div>
+  <div>
+    <button type="submit">Submit</button>
+  </div>
+
+  <div>
+    <label for="gender">Gender:</label>
+   <input type="radio" name="gender" id="gender" value="male">Male
+   <input type="radio" name="gender" id="gender" value="female">Female
+   <input type="radio" name="gender" id="gender" value="horse">horse
+
+   <input type="radio" name="gender" id="gender" value="other">Prefer not to say
+
+  </div>
+  <label for="Role">Role:</label>
+  <select name="role" id="role">
+    <option value=""></option>
+    <option value="admin">Admin</option>
+    <option value="teacher">Teacher</option>
+    <option value="student">Student:</option>
+    <option value="headdepartment">H.O.D</option>
+  </select>
+
+<!--   assignment>>look into datalist
+ -->   
+<!--   advanced forms 
+ -->    
+<!-- when it comes to input type radio ,the elements under the
+    input type share a single label linked via an ID -->
+<!--  we will look into select,checkbox ,radio ,dates,number 
+   the checkbox input type allows the user to select to select multiple options from a given array or list 
+   radio >used for single selecct 
+-->
+ 
+
+    
+
+
+   </form>
+
+  
+
+
+
