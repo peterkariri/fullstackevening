@@ -1,0 +1,38 @@
+css>>stands for cascanding stlye sheet which is used to give style
+ (color,animation,font,backgroundmanipulation,transitions) to html tags using selectors
+
+ css can be classified into three main categories:
+ inline css:styles are implemente directly in the html tag 
+ embedded/internal css:this css is embeded in the html documnet and linked in the head.(done using styles tag)
+ in this two above they are excecuted sequentially
+ external css:used externally and referred as a link in the head section:executed simultaneously 
+
+ css makes styling possible by use of selector
+ selectors are of different types in regard to the type of tag they target
+ types of seletors 
+ id selectors:are used to uniquely stype a particular element (#one)
+ class selectors:used to style an element or a group of element belonging to the same class(.child-1)
+ element /general selectors/tag selectors selectors:are used to style  common tags (p)
+ type selectors:they are used to style attributes (type[value=""]{})
+ universal selector(selecst everything in the webpage :denoted by the astric symbol(*))
+ advances level 
+ psuedoclass selectors(:nth-last-child(),:nth-child(),:nth-last-of-type(),:nth-of-type())
+ immediate child seletor:selects the immediate child in a particular structur (nav>li:targets only the 
+ first li and keaves the other li)
+ sibling selector : nav li(selects all the li in the navigation )
+
+ adjacent child selector:selects the elements in the adjacent tags (~)
+
+ css structure:block>enclosed in curly brackets,selectors,property,value
+inside the block css has a syntax where every property is separated from the other using a semicolon 
+ h1>>selector{
+    color>>property
+    :red;>>value
+ }
+ css is executed in three ways:cascade>>execute line by line,specificity(inline css,id),!important(brings
+  parmanet changes such that even if you the same selector to a
+  particular tag more than 1000 times as long as it has the important keyword it does not change)
+
+
+
+

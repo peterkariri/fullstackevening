@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+
+}
+a{
+    color: chartreuse;
+}
+.parent{
+   background-color: bisque;
+   width: 60%;
+   margin: 30px auto;
+}
+/* .firstchild{
+    background-color: aqua;
+    width: 50%;
+
+} */
+p{
+    color:green !important;
+    font-size: 17px !important;
+    font-style: italic !important;
+}
+/* .secondchild{
+    background-color: blueviolet;
+}
+#second{
+    background-color: chartreuse;
+} */
+p{
+    color:yellow ;
+    font-size: 100px;
+    font-style:normal;
+}
+
+p{
+    color:magenta !important;
+    font-size: 30px !important;
+    font-style: oblique !important;
+}
+
+//the box model property
+//background
+border
+margin
+padding
