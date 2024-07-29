@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form </title>
+</head>
+<body>
+     <!-- //forns gather user input data to be stored on the database
+     methods in programming
+     post>>sends data into the database/server
+     get>>retrieves data from the database/server
+     put>>updates data in the backend(server/database)
+     delete>removes data 
+
+     forms are redirected using two methods(post ,get)
+
+     forms have these particular elements /tags that are used inside (input,label,select,datalist,etc...)
+     forms have two sections(action>>>where you specify the path ),method>>method to be used)
+    
+     label>>what idenfyies a particular element(input,select,datalist)
+     every input type should always havea label 
+     input>>refers to the actual parameters you are setting to the targeted data(number,text,date,email,password,etc..)
+     input type has attributes to itself:this attriutes(features)are name,id,value,placeholder,(form validation attribute:required,max and min length)
+     each of this attribute has a value:
+     name>>what the input is called(fullname)>>the name of the column of your database
+     id>>identifies the uniqueness of your input,links your label to your input type(the id value should be the same as the label value)
+     value>>the value of the input(default value )it needs to be erased if user has another value >>but for projects that require a hardcoded value (calculator)
+     we use the value attribute.
+     placeholder>>the value that is displayed on the input box before the user enters a value(once the user enters a value it disappears)
+
+     required>>this is a validation attribute that makes the input field a required field
+     max length and min length::are used to set the required length(eg:password length,username )\
+
+     select:generates a dropdown list where the user selects the given fields (option value>>where the actual values to select are stored)
+     datalist:generates a list of options that the user can select from -->
+
+       //signupform
+     <form action="" method="">
+          <div>
+            <label for="fname">Firstname:</label>
+            <input type="text" name="fullname" id="fname">
+          </div>
+          <div>
+            <label for="lname">Lastname:</label>
+            <input type="text" name="lastname" id="lname">
+          </div>
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+          </div>
+          <div>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password"><!-- comes hidden(with dots) -->
+          </div>
+          <div>
+            <label for="cpassword">Confirm Password:</label>
+            <input type="password" name="password" id="cpassword"><!-- comes hidden(with dots) -->
+          </div>
+          <div>
+            <label for="date">Date</label><!-- generates a calender where the user picks the date -->
+            <input type="date" name="date" id="date">
+          </div>
+
+          
+<!--       radio input type offers a  single select from a set of options-->       
+             
+<div>
+    <label for="gender">Gender:</label>
+   <input type="radio" name="gender" id="gender" value="male">Male
+   <input type="radio" name="gender" id="gender" value="female">Female
+   <input type="radio" name="gender" id="gender" value="other">other
+
+   <input type="radio" name="gender" id="gender" value="other">Prefer not to say
+
+  </div>
+
+<!--           input type checkbox:allows room for multiple select options ()
+ -->          <div>
+            <label for="hobbies">Hobbies:</label>
+            <input type="checkbox" name="swimming" id="hobbies">swimming
+            <input type="checkbox" name="reading" id="hobbies">reading
+            <input type="checkbox" name="coding" id="hobbies">coding
+            <input type="checkbox" name="dancing" id="hobbies">dancing
+          </div>
+
+          
+<!--           select tags >>gives select option 
+ -->
+          <div>
+            <select name="users" id="users">
+                <option value=""></option>
+                <option value="admin">Admin</option>
+                <option value="student">Student</option>
+                <option value="lecturer">Lecturer</option>
+                <option value="support">Support Staff</option>
+            </select>
+          </div>
+
+          <div>
+            <!--             should always be the last element on your form
+             -->            <button type="submit">Submit</button><!-- sends the post request -->
+                      </div>
+            
+          
+     </form>
+
+
+     assignment>>build a user signup form with the fullname,email,phone number,password ,option value(staff,ceo,director),submit
+
+
+</body>
+</html>

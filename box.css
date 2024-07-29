@@ -1,0 +1,132 @@
+/* padding>>refers to the spac ein between the border and the content:the content inside (internal)
+border:the separtor of the padding and the margin 
+margin:space betweeen components that hold the contents(on the outskirts)
+
+//padding
+padding can be categoried into four main  */
+/* padding-left:gives  the specified space between the content and the left border
+padding-rigth:gives  the specified space between the content and the right border
+padding-top:gives  the specified space between the content and the top border
+padding-bottom:gives  the specified space between the content and the bottom border
+
+//shorhand notation
+padding:top,bottom,left,right;
+padding:10px  20px 30px 40px;
+padding:30px auto;leaves a padding of 30px top and bottom and equal padding left and right(center)
+
+
+//margin
+
+margin-top:gives  the specified space between the container and the preceeding/top contsiner
+margin-bottom
+margin-left
+margin-right:
+
+shorthand:the margin shortanh notation is used to center the container/div
+margin:top,bottom,left,right;
+margin:20px,30px,40px,40px;
+
+margin:30px auto;
+
+//border:denotes the behaviour of a border
+border-width:denotes the width of the border
+border-style:denotes the style of the border
+border-color:denotes the color of the border
+border:width,style,color;
+border:1px solid black;>>shorthand notation
+
+
+border-radius>>curves the edgdes of the specified container
+it can be :,left,:right(top,bottom)
+border-top-left-radius:curves the left top
+border-top-right-radius:curves the right top
+border-bottom-left-radius:curves the left bottom
+border-bottom-right-radius:curves the rigth bottom
+
+border-radius:20px;
+
+border-radius:200px 100px 200px 100px;
+??
+background >>>defines the different background properties in regard to the values
+
+background image:sets the background as the image using url
+background-repeat:sets the background image to repeat in the x and y direction(repeat,no-repeat,repeat-x,repeat-y)
+background-color:sets the color of th bckground
+background-position:sets the position of the background image(center)
+background-attachment:sets the background image to scroll or fixed()together with the position property 
+background-size:it sets the backgorund to contain(only around its width) or cover:coveres the entire width
+
+
+ */
+
+/*  body{
+    background-image: url('https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;//sets background to defaul fix on scrolling it does not move 
+    fixed is used together with position and z-index to overlay over elements 
+
+ }
+
+
+ //position property/
+ positions control the behavior of elements in the following ways:
+ static: default value. An element stays in the same place, even if the page is scrolled(elemnt moves with webpage)
+ relative: An element is positioned relative to its normal position
+ absolute: An element is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport
+ fixed: An element is positioned relative to the viewport, which means it always stays in the same place
+ sticky: An element is positioned based on the user's scroll position. It is positioned relative until a
+ scrolling threshold (default 0px) is met in the top direction. It is then " */
+/* styles.css */
+
+
+
+.container {
+    position: relative;
+    width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.static {
+    position: static;
+    background-color: #ff69b4;
+}
+
+.fixed {
+    position: fixed;
+    top: ce3 
+    right: 20px;
+    background-color: #4CAF50;
+}
+
+.sticky {
+    position: sticky;
+    top: 20px;
+    background-color: #03A9F4;
+}
+
+.relative {
+    position: relative;
+    top: 30px;
+    left: 70px;
+    background-color: #FF9800;
+}
+
+.absolute {
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    background-color: #E91E63;
+}

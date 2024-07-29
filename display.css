@@ -1,0 +1,73 @@
+display//layout>>outlok of a particular arrangement >>you structurre your html then uses css display properties to align the
+different containers in the maaner you please(in display we have four major display:
+display block>>naturally /default>>everything its set to display block 
+display inline>>elements are displayed inline>>like text,in a straight line
+display inline-block>>elements are displayed inline>>but they can have width and height>>like images>>
+display flex>>flexible>>elements are displayed in a row or column>>flexbox>>flex container
+//flex container>>flex items>>flex items are the elements inside the flex container>>flex container has
+properties like 
+flex-wrap>>
+justify-content>>
+align-items>>
+align-content>>
+flex-grow>>
+flex-shrink>>
+flex-basis>>
+flex-wrap>>
+flex-direction>>differetn elemetns are directed to face wether,row,column,row-reverse,columnreverse
+
+assigning the direction property>>firstly you declare display to flex then declare the direction property 
+eg{
+
+    display:flex;
+    flex-direction:row;
+    flex-direction:row-reverse;right to left turnover
+    flex-direction:column;
+    flex-direction:column-reverse;bottom to top turnover
+
+}
+
+
+
+giving space among the items in the flex containers we use the justify property;
+{
+
+    justify-content:space-between;>>leaves an equal margin between the content >>by sending the content to the furthest end of their border
+    justify-content:space-around;you will center items then leave a space around the items evenly 
+    justify-content:space-evenly;opposite of space between>>leaves the spaces to the left and right margin and cjoin the child containers leaving evemn spaces
+
+}
+flex wrap>>wrapping elements i a flex together such 
+that once you shrink the viewport the elemetns will still be distributed evenly as the responxiveness is ongoing
+wrap-reverse>>reverses the elemetns in the flex wrap 
+
+flewx-shrink>>as we progress from one child container to the other the size decreases 
+flex-grow>>as we progress from one child container to the other the size increase
+flex basi3>>sets the size of the child contianers(initially the ratio is 1:1:1)
+flex-basis:1,1,2;
+
+////
+text-styling properties::
+text-align>>aligns the text to the left,right,center or justify
+text-align-last>>aligns the last line of the text to the left,right,center or justify
+text-indent>>indents the text to the left or right
+text-justify>>justifies the text to the left,right,center or full
+text-overflow>>sets the text to be hidden or visible when it overflows the container
+text-transform>>transforms the text to uppercase,lowercase,capitalize or none
+
+text-decoration>>sets the text to be underlined,overlined,line-through(strike-through) or none
+text-shadow>>sets the text to be shadowed with a color and a blur radius
+text-stroke>>sets the text to be stroked with a color and a width
+
+
+
+
+
+
+
+//flex-direction>>row>>row-reverse>>column>>column-reverse>>flex-wrap>>wrap
+>>wrap-reverse>>justify-content>>flex-start>>flex-end>>center>>space-between>>space
+-around>>space-evenly>>align-items>>flex-start>>flex-end>>center>>baseline>>stretch
+>>align-content>>flex-start>>flex-end>>center>>space-between>>space-around>>space-even
+
+)
