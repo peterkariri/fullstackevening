@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 50%;
+    margin: 60px auto;
+    
+}
+p{
+    animation: /* the animation name */bounce 2s/*  when to start */ infinite /* to continue till infinity */ ;
+
+}
+
+button{
+    background-color: blue;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    transition: all ease-in-out 1.5s;
+    animation: /* the animation name */bounce 2s/*  when to start */ infinite /* to continue till infinity */ ;
+
+
+}
+@keyframes bounce{
+    5%{
+        background-color: chartreuse;
+    }
+    20%{
+        background-color: cyan;
+        scale: 0.5;
+    }
+    50%{
+        background-color: darkgreen;
+        scale: 2;
+        rotate: 180deg;
+    }
+    80%{
+        background-color: black;
+    }
+    100%{
+        background-color: pink;
+        scale: 1;
+    }
+}
+
+
+
+button:hover{
+    background-color: red;
+    color: bisque;
+    transform: rotate(90deg) scale(2);
+
+}
+input{
+    border: 2px solid green;
+}
+
+#fname:focus{
+    border-color: blue  ;
+}
+
